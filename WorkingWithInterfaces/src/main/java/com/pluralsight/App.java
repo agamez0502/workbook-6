@@ -12,6 +12,8 @@ public class App {
         ArrayList<Person> miFamilia = new ArrayList<Person>();
 
         //add family members
+        miFamilia.add(new Person("Alondra", "Gamez", 29));
+        miFamilia.add(new Person("Alondra", "Gamez", 21));
         miFamilia.add(new Person("Avery", "Gamez", 1));
         miFamilia.add(new Person("Claudia", "Gomez", 44));
         miFamilia.add(new Person("Guadalupe", "Ramirez", 50));
@@ -22,8 +24,26 @@ public class App {
         miFamilia.add(new Person("Ozzy", "Ramirez", 2));
         miFamilia.add(new Person("Veronica", "Zamarripa", 13));
 
-        //sort the list by last name and display the results
-        Collections.sort(miFamilia);
+        //sorting with a lambda
+        miFamilia.sort((p1, p2) -> {
+            //if statement for last name comparison - if they are not equal sort by last name
+            int lastNameComparison = p1.getLastName().compareToIgnoreCase(p2.getLastName());
+            if (lastNameComparison != 0) {
+                return lastNameComparison;
+            }
+
+            //if statement for first name comparison - if last names are the same sort by first name
+            int firstNameComparison = p1.getFirstName().compareToIgnoreCase(p2.getFirstName());
+            if (firstNameComparison != 0) {
+                return firstNameComparison;
+            }
+
+            //if last name and first name are the same then sort by age
+            return Integer.compare(p1.getAge(), p2.getAge());
+        });
+
+//        //sort the list by last name and display the results
+//        Collections.sort(miFamilia);
 
         //header with formatting
         System.out.println("\t\t\t╔═══════════════════════╗");
