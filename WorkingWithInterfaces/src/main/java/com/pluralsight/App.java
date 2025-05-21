@@ -25,25 +25,25 @@ public class App {
         miFamilia.add(new Person("Veronica", "Zamarripa", 13));
 
         //sorting with a lambda
-        miFamilia.sort((p1, p2) -> {
-            //if statement for last name comparison - if they are not equal sort by last name
-            int lastNameComparison = p1.getLastName().compareToIgnoreCase(p2.getLastName());
-            if (lastNameComparison != 0) {
-                return lastNameComparison;
-            }
+//        miFamilia.sort((p1, p2) -> {
+//            //if statement for last name comparison - if they are not equal sort by last name
+//            int lastNameComparison = p1.getLastName().compareToIgnoreCase(p2.getLastName());
+//            if (lastNameComparison != 0) {
+//                return lastNameComparison;
+//            }
+//
+//            //if statement for first name comparison - if last names are the same sort by first name
+//            int firstNameComparison = p1.getFirstName().compareToIgnoreCase(p2.getFirstName());
+//            if (firstNameComparison != 0) {
+//                return firstNameComparison;
+//            }
+//
+//            //if last name and first name are the same then sort by age
+//            return Integer.compare(p1.getAge(), p2.getAge());
+//        });
 
-            //if statement for first name comparison - if last names are the same sort by first name
-            int firstNameComparison = p1.getFirstName().compareToIgnoreCase(p2.getFirstName());
-            if (firstNameComparison != 0) {
-                return firstNameComparison;
-            }
-
-            //if last name and first name are the same then sort by age
-            return Integer.compare(p1.getAge(), p2.getAge());
-        });
-
-//        //sort the list by last name and display the results
-//        Collections.sort(miFamilia);
+        //sort the list by last name and display the results
+        Collections.sort(miFamilia);
 
         //header with formatting
         System.out.println("\t\t\t╔═══════════════════════╗");
@@ -53,6 +53,7 @@ public class App {
         System.out.println("════════════════════════════════════════════════════════");
 
         //loop over the list and formatting
+        //miFamilia.forEach({});
         for (Person people : miFamilia) {
             System.out.printf("   %-15s    %-15s    %3d\n", people.getFirstName(), people.getLastName(), people.getAge());
         }
