@@ -83,4 +83,8 @@ From mastering interfaces to creating `.jar` files and navigating Git branches, 
 ---
 
 ### 💻 Made for learning by learners.  
-Push code, pull knowledge. Happy coding! ✨
+Push code, pull knowledge. Happy coding! ✨ 
+
+---
+
+### 🔥 Stay bold. Stay curious. And always… slay the syntax. 💅👩‍💻🚀
