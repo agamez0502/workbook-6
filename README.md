@@ -59,28 +59,18 @@ From mastering interfaces to creating `.jar` files and navigating Git branches, 
   - Fast-forward merges  
   - Merge conflicts & tools ⚔️  
 - Viewing and Deleting Branches 👁️🗑️  
-- 🧠 **Hands-on Exercises Included**
 
 ---
 
-## 📂 Bonus Guide Included: *Working with JAR Files in IntelliJ*
-
-📄 `Workbook 6 - Working with JAR Files in IntelliJ.pdf`
-
-This PDF shows how to:
-- Create `.jar` files in IntelliJ 🧳  
-- Define your `MANIFEST.MF` with `Main-Class`  
-- Run JARs from the terminal  
+### 🔹 Module 7: Working with JAR Files in IntelliJ 💼
+- Structuring Your Java Project 📁  
+- Defining a `MANIFEST.MF` file 🧾  
+  - Setting the `Main-Class`  
+- Creating and Exporting `.jar` Files 📦  
+- Running JARs from the Terminal  
   - `java -jar myfile.jar`  
-- Inspect contents with:  
-  - `jar -tvf myfile.jar`
-
----
-
-## 🛠️ Requirements
-- Java 17+ ☕  
-- IntelliJ IDEA 🧠  
-- Git CLI or GUI client 🪄
+- Inspecting JAR Contents  
+  - `jar -tvf myfile.jar`  
 
 ---
 
