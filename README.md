@@ -1,5 +1,4 @@
 # 🧠 Workbook 6: Advanced Object-Oriented Programming (A-OOP) 💻  
-**Version 2.2**
 
 Welcome to **Workbook 6** — your guide through the powerful world of **advanced object-oriented programming** in Java!  
 From mastering interfaces to creating `.jar` files and navigating Git branches, this workbook sets you up for Java success.
